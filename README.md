@@ -1,0 +1,1 @@
+Esta calculadora se utiliza para conocer el volumen gástrico con dos fórmulas, la habitual (Volumen=27+(14,6 x Área antral)-(1,28 x Edad)   Área antral= ∅AP x ∅CC x π/4) y la que ha demostrado tener más AUC (Volumen= -372,54 + 282,49 x log (área antral) – 1,68 x peso)
