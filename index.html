@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Volumen Gástrico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Volumen Gástrico</h1>
+
+        <div class="input-group">
+            <label for="diamAP">Diámetro Anteroposterior Antral (∅AP) (cm):</label>
+            <input type="number" id="diamAP" step="0.01" placeholder="Ej: 2.5">
+        </div>
+
+        <div class="input-group">
+            <label for="diamCC">Diámetro Craneocaudal Antral (∅CC) (cm):</label>
+            <input type="number" id="diamCC" step="0.01" placeholder="Ej: 3.0">
+        </div>
+
+        <div class="input-group">
+            <label for="edad">Edad (años):</label>
+            <input type="number" id="edad" step="1" placeholder="Ej: 35">
+        </div>
+
+        <div class="input-group">
+            <label for="peso">Peso Corporal (kg):</label>
+            <input type="number" id="peso" step="0.1" placeholder="Ej: 70.5">
+        </div>
+
+        <button onclick="calcularVolumen()">Calcular Volumen</button>
+
+        <div id="error-message" class="error"></div>
+
+        <div class="resultados">
+            <div id="resultado1" class="resultado-seccion">
+                <h2>Resultado Fórmula 1</h2>
+                <p>Área Antral: <span id="areaAntral1">-</span> cm²</p>
+                <p>Volumen Gástrico: <span id="volumen1">-</span> ml</p>
+            </div>
+
+            <div id="resultado2" class="resultado-seccion">
+                <h2>Resultado Fórmula 2</h2>
+                <p>Área Antral: <span id="areaAntral2">-</span> cm²</p>
+                <p>Volumen Gástrico: <span id="volumen2">-</span> ml</p>
+                <p class="nota">(Requiere Área Antral > 0)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="number"] {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultados {
+    margin-top: 30px;
+}
+
+.resultado-seccion {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border-left: 5px solid #007bff;
+}
+
+.resultado-seccion h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.resultado-seccion p {
+    margin: 5px 0;
+}
+
+.resultado-seccion span {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nota {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
